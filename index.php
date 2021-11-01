@@ -49,8 +49,12 @@ ob_start();
     <meta property="og:site_name" content="Retina.LOVD.nl">
 
     <style type="text/css">
+        a {color: rgb(0, 54, 96);}
+        body {background-color: rgba(16, 190, 210, 0.2);}
         footer {background-color: rgba(0, 0, 0, 0.1);}
         .card  {background-color: rgba(255, 255, 255, 0.5);}
+        .card-header {background-color: rgba(0, 54, 96, 0.5);}
+        .card-footer {background-color: rgba(0, 54, 96, 0.5);}
     </style>
 </head>
 <body>

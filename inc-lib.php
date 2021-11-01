@@ -67,14 +67,14 @@ function tips_formatPost ($aRequest)
             <div class="card-body">
                 ' . $sBody . '
             </div>
-            <div class="card-footer text-muted">
+            <div class="card-footer">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>' .
         (!$sTags? '' : '
                         ' . $sTags) . '
 
                     </div>
-                    <small class="text-muted">last updated ' . $aRequest['date'] . '</small>
+                    <small>last updated ' . $aRequest['date'] . '</small>
                 </div>' .
         (true || empty($aRequest['code'])? '' : '
                 <span class="badge badge-primary">https://epoxytips.nl/' . $aRequest['code'] . '</span>') . '
