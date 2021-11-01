@@ -1,0 +1,11 @@
+# We rely on MultiViews or the RewriteEngine. We can't check on MultiViews here,
+# nor can we cleanly try to enable it here without the need for AllowOverride All.
+# If you do not want to use the RewriteEngine, make sure "MultiViews" is enabled
+# *explicitly* in the Apache configuration, and remove the code below.
+# Requires AllowOverride FileInfo
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php
+</IfModule>
