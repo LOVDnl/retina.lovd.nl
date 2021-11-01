@@ -1,0 +1,60 @@
+{
+  "categories": [
+    "Retinal diseases genetic variants registry"
+  ],
+  "links": {
+    "portal": "https://ffb.portal.lovd.nl/"
+  },
+  "tips": [
+    {
+      "code": "home",
+      "language": "en",
+      "date": "2021-11-01",
+      "category": ["Retinal diseases genetic variants registry"],
+      "title": "Project Summary",
+      "body": [
+        "Inherited retinal diseases (IRD) display a broad spectrum of variability, both on the level of the individual",
+        " (phenotype and disease severity) and the DNA level (the gene(s) and variants involved).",
+        "Significant improvements in the technology to detect DNA variants (especially DNA sequencing)",
+        " and an associated reduction in the cost involved have revolutionized our ability to get to a definite diagnosis for many patients.",
+        "While initially, we were able to analyze only one gene simultaneously,",
+        " it is now possible and affordable to analyze all genes known to be involved in inherited retinal diseases.",
+        "The technology even allows us to study all genes in the human genome.",
+        "This facilitated the recent discovery of a whole series of new inherited retinal disease genes",
+        " of which some were found to be affected in only a few patients/families worldwide.",
+        "At the moment, more than 250 different genes have been identified, together containing several thousands of unique changes at the DNA level (variants).",
+        "<BR><BR>",
+        "However, these new technological advances also came with a problem.",
+        "When we analyze all genes known to be involved in a patient, we detect a large range of variants.",
+        "For each variant, we have to answer the question,",
+        " &quot;does this variant have deleterious consequences, and can it explain the patient's health problems?&quot;.",
+        "We are currently unable to answer this question for all variants identified and therefore can not give a definite diagnosis for all patients analyzed.",
+        "An effective and relatively cheap step forward is to collect all existing data",
+        " - patient phenotypes and the variants identified - and share these worldwide.",
+        "<BR><BR>",
+        "In this project, we are creating such a publicly available resource for non-syndromic IRD, Bardet-Biedl, and Usher syndrome,",
+        " using the existing platform of the [&quot;Global Variome shared LOVD&quot; databases](https://lovd.nl/shared).",
+        "In this resource, we are collecting all data published in scientific literature",
+        " and all unpublished data available in the laboratories of the participating institutes and (commercial) genetic testing centers worldwide.",
+        "We have recruited experts per disease/gene who are collecting data from the literature.",
+        "We have created a portal where they are uploading data files to be processed.",
+        "Several data analysts then check the uploaded files, extract variant and patient data, and import the data into the database.",
+        "Then, the gene experts will define protocols for variant classifications based on existing standards.",
+        "When all data are collected, they will evaluate each variant and classify each as &quot;disease-associated&quot; (pathogenic),",
+        " &quot;not disease-associated&quot; (benign), or as &quot;unknown&quot; (variant of unknown significance, VUS).",
+        "The last category, the variants of unknown significance (VUS), are currently the most problematic group:",
+        " we have too little information to allow an evidence-based classification.",
+        "We expect that by simply pulling together all available information,",
+        " we should be able to give a definite opinion of a significant fraction of the VUS variants.",
+        "The results of this study are also shared with ClinVar, the variant database hosted by the National Institutes of Health.",
+        "<BR><BR>",
+        "With the advent of therapies for an increasing number of IRDs, often being variant-specific,",
+        " there is an additional incentive to collect the data mentioned systematically and sustainably.",
+        "The gene variant databases built during this project will also serve as an entry point",
+        " to identify the patients/families that could benefit from the therapies developed."
+      ],
+      "tags": [],
+      "related": []
+    }
+  ]
+}
