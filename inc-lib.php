@@ -466,7 +466,7 @@ function tips_showSearchResults ($sURL)
     print('
         <div class="card border-primary">
             <div class="card-header">
-                Resultaten
+                Results
             </div>
             <ul class="list-group list-group-flush">');
     foreach ($aResults as $aTip) {
