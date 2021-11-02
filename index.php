@@ -68,6 +68,9 @@ ob_start();
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="funding">Funding</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="genes">Genes</a>
                 </li>
                 <li class="nav-item">
