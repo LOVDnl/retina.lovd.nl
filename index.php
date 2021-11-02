@@ -60,7 +60,7 @@ ob_start();
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: #003660;">
-        <a class="navbar-brand font-weight-bold" href="">Retinal diseases genetic variants registry funded by Foundation Fighting Blindness</a>
+        <a class="navbar-brand font-weight-bold text-truncate" href="">Retinal diseases genetic variants registry</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -159,6 +159,7 @@ if (empty($_DATA)) {
     }
 }
 ?>
+        <BR>
         <footer class="my-md-4 border-top px-lg-2" style="background: #003660;">
             <small class="text-white">&copy; 2020-2021 Leiden University Medical Center (LUMC)</small>
         </footer>
