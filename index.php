@@ -71,6 +71,9 @@ ob_start();
                     <a class="nav-link" href="genes">Genes</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="l/donate" target="_blank">Donate to FFB</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="l/portal" target="_blank">Portal</a>
                 </li>
             </ul>
