@@ -183,6 +183,11 @@ function tips_getLink ($sTitle)
     // Makes a link from a title.
     static $aLinks = array();
 
+    // Addition just for retina.LOVD.nl.
+    if ($sTitle == 'List of genes we are working on') {
+        return 'genes';
+    }
+
     if (!isset($aLinks[$sTitle])) {
         $sLink = str_replace(array(
             ' ',
@@ -482,6 +487,16 @@ function tips_showSearchResults ($sURL)
         tips_displayError('No search term', 'You have not provided a search term. Fill in a search term in the field in the menu on the top of the page, and press &quot;Search&quot;.');
         return false;
     }
+
+    // Addition just for retina.LOVD.nl.
+    // Also search in gene list.
+    $_DATA['tips'][] = array(
+        'code' => 'genes',
+        'date' => '2021-11-02',
+        'title' => 'List of genes we are working on',
+        'tags' => array('genes'),
+        'body' => $_DATA['genes'],
+    );
 
     foreach ($_DATA['tips'] as $aTip) {
         // Bonus points (x10) if the page's code matches,
