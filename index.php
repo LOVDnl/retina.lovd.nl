@@ -106,6 +106,12 @@ if (empty($_DATA)) {
     }
 
     // Special pages.
+    // Addition specifically for retina.LOVD.nl.
+    elseif (substr($sURL . '/', 0, 6) == 'genes/') {
+        // Gene page.
+        tips_showGenes($sURL);
+    }
+
     elseif (substr($sURL . '/', 0, 2) == 'c/') {
         // Categories.
         tips_showCategories($sURL);

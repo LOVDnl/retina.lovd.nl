@@ -299,6 +299,64 @@ function tips_showCategories ($sURL)
 
 
 
+// Addition specifically for retina.LOVD.nl.
+function tips_showGenes ($sURL)
+{
+    // Show list of genes that we're working on.
+    global $_DATA;
+
+    // URL starts with 'genes/' or is just 'genes'.
+    $sGenePrefix = strtolower(substr($sURL, 6));
+    $aResults = array();
+
+    foreach ($_DATA['genes'] as $sGene) {
+        // If we're searching, then select only the genes matching the prefix.
+        // Otherwise, show all genes.
+        if (!$sGenePrefix || strpos(strtolower($sGene), $sGenePrefix) === 0) {
+            $aResults[] = array(
+                'title' => $sGene,
+                'date' => '2020-01-01', // In case later we'll show when we updated data.
+                'progress' => '', // In case we'll later show how far we are.
+            );
+        }
+    }
+
+    if (!$aResults) {
+        // No results.
+        tips_displayError('No results', 'There are no results for your search term. Try a different term, or <a href="https://www.LOVD.nl/contact?other" target="_blank">contact us</A>.');
+        return false;
+    }
+
+    // Fill in OG data to make the Facebook previews pretty.
+    tips_setOGData(array(
+        'title' => (!$sGenePrefix? 'List of genes we are working on' : 'Search results'),
+    ));
+
+    print('
+        <div class="card border-primary">
+            <div class="card-header">
+                ' . (!$sGenePrefix? 'List of genes we are working on' : 'Search results') . '
+            </div>
+            <ul class="list-group list-group-flush">');
+    foreach ($aResults as $aGene) {
+        print('
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="https://LOVD.nl/' . $aGene['title'] . '" target="_blank">' . $aGene['title'] . '</a><span>' .
+            ((time() - strtotime($aGene['date'])) > (7 * 24 * 60 * 60)? '' : '
+                    <span class="badge badge-success">Recently updated!</span>') . '
+                    <span class="badge badge-primary badge-pill">' . $aGene['progress'] . '</span></span>
+                </li>');
+    }
+    print('
+            </ul>
+        </div>');
+    return true;
+}
+
+
+
+
+
 function tips_showLinks ($sURL)
 {
     // Show links or forward to target page.
