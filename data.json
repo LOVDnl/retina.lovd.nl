@@ -260,7 +260,10 @@
         " to identify the patients/families that could benefit from the therapies developed."
       ],
       "tags": [],
-      "related": []
+      "related": [
+        "List of genes we are working on",
+        "Funding"
+      ]
     },
     {
       "code": "funding",
@@ -310,7 +313,9 @@
         "</div>"
       ],
       "tags": [],
-      "related": []
+      "related": [
+        "Project Summary"
+      ]
     }
   ]
 }
