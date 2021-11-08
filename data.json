@@ -217,8 +217,11 @@
       "language": "en",
       "date": "2021-11-01",
       "category": ["Retinal diseases genetic variants registry"],
-      "title": "Project Summary",
+      "title": "Project Summary - Funded by the Foundation Fighting Blindness",
       "body": [
+        "<A href=\"https://www.fightingblindness.org\" target=\"_blank\">",
+        "  <IMG src=\"gfx/FFB_logo.png\" class=\"rounded float-right ml-4\" style=\"max-width: 50%\" alt=\"This project has been funded by the Foundation Fighting Blindness.\">",
+        "</A>",
         "Inherited retinal diseases (IRD) display a broad spectrum of variability, both on the level of the individual",
         " (phenotype and disease severity) and the DNA level (the gene(s) and variants involved).",
         "Significant improvements in the technology to detect DNA variants (especially DNA sequencing)",
