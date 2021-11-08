@@ -8,6 +8,7 @@
 
     # [R]edirect HTTP to HTTPS and stop processing ([L]).
     RewriteCond %{HTTPS} !=on
+    RewriteCond %{SERVER_NAME} !=localhost
     RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
     # Send all traffic to index.php.
